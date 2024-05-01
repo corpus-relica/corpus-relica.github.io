@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrelica_docs=self.webpackChunkrelica_docs||[]).push([[1096],{2945:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"default"}')}}]);

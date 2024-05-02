@@ -6,7 +6,8 @@ dotenv.config();
 
 const config: Config = {
   title: "Systema Relica",
-  tagline: "Expression Begets Experience",
+  tagline:
+    "Semantic Data Modelling and Management for Next Generation Applications",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here

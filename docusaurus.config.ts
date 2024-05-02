@@ -79,7 +79,7 @@ const config: Config = {
           position: "left",
           label: "Background",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        // { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/corpus-relica",
           label: "GitHub",

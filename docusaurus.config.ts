@@ -13,7 +13,7 @@ const config: Config = {
   url: "https://docs.relica.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/docs/",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   organizationName: "corpus-relica", // Usually your GitHub org/user name.
@@ -142,6 +142,7 @@ const config: Config = {
     mermaid: true,
   },
   themes: ["@docusaurus/theme-mermaid"],
+
   plugins: [
     [
       "@docusaurus/plugin-google-gtag",

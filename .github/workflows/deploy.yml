@@ -42,6 +42,7 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           USE_SSH: true
+          GOOGLE_ANALYTICS_ID: ${{secrets.GOOGLE_ANALYTICS_ID}}
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "gh-actions"

@@ -1,6 +1,8 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import dotenv from "dotenv";
+dotenv.config();
 
 const config: Config = {
   title: "Systema Relica",
@@ -11,7 +13,7 @@ const config: Config = {
   url: "https://docs.relica.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/docs/",
 
   // GitHub pages deployment config.
   organizationName: "corpus-relica", // Usually your GitHub org/user name.
@@ -135,6 +137,20 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
+  plugins: [
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        trackingID: process.env.GOOGLE_ANALYTICS_ID,
+        anonymizeIP: true,
+      },
+    ],
+  ],
 };
 
 export default config;

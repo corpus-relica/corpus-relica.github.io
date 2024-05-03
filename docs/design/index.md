@@ -1,11 +1,25 @@
 # Overview
 
-## Quintessential Semantic Modelling
+Relica is a data platform which serves a semantic knowledge graph based on Gellish Ontological Modelling Language.
+
+It enables:
+
+- Modelling of information within the semantic graph
+  - creation of facts
+- Revokation/dropping of facts
+- manual insertion of facts
+  - single fact
+  - bulk xls/csv
+- mapping application domain to semantic model
+  - create facts from existing data
+  - derive data objects from facts
+- api access to Semantic Relation space
+
 
 ## Architectural Components
 
 ```mermaid
-    C4Component
+C4Component
     title Component diagram for Systema Relica
 
     Container(archivist, "Archivist", "Gellish Relation Space Interface", "Allows")
@@ -33,6 +47,8 @@
 Graph Database
 
 Cache
+
+Environment
 
 ### Archivist
 

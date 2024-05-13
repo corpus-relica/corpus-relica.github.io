@@ -1,34 +1,33 @@
 # Definition Modelling
 
 ```mermaid
-stateDiagram-v2
-    BD: Base Definition
-    PO: Physical Object
-    PO.SDQA: Specify Defining Qualitative Aspect 
-    DNQualA: Define new Qualitative Aspect
-    PO.SDNIA: Specify Defining Nature of Intrinsic Aspect
-    DNIntrA: Define new Intrinsic Aspect
-    SDVIA: Specify Defining Values of Intrinsic Aspects
-    DNQuantA: Define new Quantitative Aspect
-    PO.SIF: Specify Intent Function
-    DNKO: Define new Kind of Occurrence
-    PO.SC: Specify Composition
-    CCrPO: Create Container Physical Object
-    CCdPO: Create Contained Physical Object
-    DGO: Denotation by Graphical Object
-    DGO_UCIF: Upload/Create image File
-    DGO_DPS: Define Picture of Something
-    PO.DTO: Denotation by Textual Object
-    DTO_UCTF: Upload/Create Text File
-    DTO_DIS: Define Information about Something
-    PO.ITM: Inclusion of Text in Model
-    PO.H: History
+flowchart TD
+    BD[Base Definition]
+    PO.SDQA[Specify Defining Qualitative Aspect]
+    DNQualA[Define new Qualitative Aspect]
+    PO.SDNIA[Specify Defining Nature of Intrinsic Aspect]
+    DNIntrA[Define new Intrinsic Aspect]
+    SDVIA[Specify Defining Values of Intrinsic Aspects]
+    DNQuantA[Define new Quantitative Aspect]
+    PO.SIF[Specify Intent Function]
+    DNKO[Define new Kind of Occurrence]
+    PO.SC[Specify Composition]
+    CCrPO[Create Container Physical Object]
+    CCdPO[Create Contained Physical Object]
+    DGO[Denotation by Graphical Object]
+    DGO_UCIF[Upload/Create image File]
+    DGO_DPS[Define Picture of Something]
+    PO.DTO[Denotation by Textual Object]
+    DTO_UCTF[Upload/Create Text File]
+    DTO_DIS[Define Information about Something]
+    PO.ITM[Inclusion of Text in Model]
+    PO.H[History]
 
-    [*] --> BD
+    start --> BD
     BD --> PO
-    state PO {
+    subgraph PO
         PO.H
-        [*] --> PO.SDQA
+        POStart --> PO.SDQA
         PO.SDQA --> PO.SDNIA
         PO.SDNIA --> SDVIA
         SDVIA --> PO.SIF
@@ -36,8 +35,8 @@ stateDiagram-v2
         PO.SC --> DGO
         DGO --> PO.DTO
         PO.DTO --> PO.ITM
-        PO.ITM --> [*]
-    }
+        PO.ITM --> POEnd
+    end
     PO.SDQA --> DNQualA
     DNQualA --> PO.SDQA
     PO.SDNIA --> DNIntrA
@@ -59,4 +58,6 @@ stateDiagram-v2
     PO.DTO --> DTO_DIS
     DTO_DIS --> PO.H
     PO.ITM --> DTO_DIS
+
+    click PO.SDQA "https://www.github.com" "This is a tooltip for a link"
 ```

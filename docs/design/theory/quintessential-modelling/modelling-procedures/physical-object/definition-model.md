@@ -36,6 +36,7 @@ stateDiagram-v2
         PO.SC --> DGO
         DGO --> PO.DTO
         PO.DTO --> PO.ITM
+        PO.ITM --> [*]
     }
     PO.SDQA --> DNQualA
     DNQualA --> PO.SDQA
@@ -58,5 +59,4 @@ stateDiagram-v2
     PO.DTO --> DTO_DIS
     DTO_DIS --> PO.H
     PO.ITM --> DTO_DIS
-    PO.ITM --> [*]
 ```

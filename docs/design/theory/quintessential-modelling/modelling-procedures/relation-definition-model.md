@@ -1,4 +1,4 @@
-# Aspect Definition Modelling
+# Relation Definition Modelling
 
 ```mermaid
 flowchart TD

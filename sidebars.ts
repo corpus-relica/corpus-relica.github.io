@@ -36,6 +36,11 @@ const sidebars: SidebarsConfig = {
                   items: [
                     {
                       type: "doc",
+                      id: "design/theory/quintessential-modelling/modelling-procedures/base-definition-model",
+                      label: "Base",
+                    },
+                    {
+                      type: "doc",
                       id: "design/theory/quintessential-modelling/modelling-procedures/physical-object-definition-model",
                       label: "Physical Object",
                     },
@@ -43,6 +48,21 @@ const sidebars: SidebarsConfig = {
                       type: "doc",
                       id: "design/theory/quintessential-modelling/modelling-procedures/aspect-definition-model",
                       label: "Aspect",
+                    },
+                    {
+                      type: "doc",
+                      id: "design/theory/quintessential-modelling/modelling-procedures/role-definition-model",
+                      label: "Role",
+                    },
+                    {
+                      type: "doc",
+                      id: "design/theory/quintessential-modelling/modelling-procedures/relation-definition-model",
+                      label: "Relation",
+                    },
+                    {
+                      type: "doc",
+                      id: "design/theory/quintessential-modelling/modelling-procedures/occurrence-definition-model",
+                      label: "Occurrence",
                     },
                   ],
                 },

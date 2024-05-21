@@ -1,4 +1,4 @@
-# Aspect Definition Modelling
+# Occurrence Definition Modelling
 
 ```mermaid
 flowchart TD

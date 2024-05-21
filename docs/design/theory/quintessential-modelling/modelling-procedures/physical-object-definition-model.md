@@ -1,7 +1,6 @@
 # Physical Object Definition Modelling
 basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, and stepBefore
 ```mermaid
-%%{ init: { 'flowchart': { 'curve': 'stepAfter' } } }%%
 flowchart TB
     PO.SDQA[Specify Distinguishing Qualitative Aspect]
     DNQualA[Derive new Qualitative Aspect]

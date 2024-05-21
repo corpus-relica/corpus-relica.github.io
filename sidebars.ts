@@ -32,20 +32,42 @@ const sidebars: SidebarsConfig = {
               items: [
                 {
                   type: "category",
-                  label: "Physical Object",
+                  label: "Definition Modelling",
                   items: [
                     {
                       type: "doc",
-                      id: "design/theory/quintessential-modelling/modelling-procedures/physical-object/definition-model",
-                      label: "Definition Model",
+                      id: "design/theory/quintessential-modelling/modelling-procedures/physical-object-definition-model",
+                      label: "Physical Object",
                     },
                     {
                       type: "doc",
-                      id: "design/theory/quintessential-modelling/modelling-procedures/physical-object/knowledge-model",
-                      label: "Knowledge Model",
+                      id: "design/theory/quintessential-modelling/modelling-procedures/aspect-definition-model",
+                      label: "Aspect",
                     },
                   ],
                 },
+                {
+                  type: "category",
+                  label: "Knowledge Modelling",
+                  items: [
+                    {
+                      type: "doc",
+                      id: "design/theory/quintessential-modelling/modelling-procedures/physical-object-knowledge-model",
+                      label: "Physical Object",
+                    },
+                  ],
+                },
+                // {
+                //   type: "category",
+                //   label: "Aspect",
+                //   items: [
+                //     {
+                //       type: "doc",
+                //       id: "design/theory/quintessential-modelling/modelling-procedures/aspect/definition-model",
+                //       label: "Definition Model",
+                //     },
+                //   ],
+                // },
               ],
             },
           ],

@@ -11,25 +11,25 @@ flowchart TD
     RO[Role Definition]
     RE[Relation Definition]
     O[Occurrence Defintion]
-    E[End]
+    E([End])
 
-    start --> AUID
+    S([Start]) ==> AUID
     subgraph BD
-        AUID --> SPN
-        SPN --> PTD
-        PTD --> SSCAT
+        AUID ==> SPN
+        SPN ==> PTD
+        PTD ==> SSCAT
     end
-    SSCAT --> B{What is it?}
-    B -->|Physical Object| PO
-    B -->|Aspect| A 
-    B -->|Role| RO
-    B -->|Relation| RE
-    B -->|Occurrence| O 
-    PO:::external --> E
-    A:::external --> E
-    RO:::external --> E
-    RE:::external --> E
-    O:::external --> E
+    SSCAT ==> B{What is it?}
+    B ==>|Physical Object| PO
+    B ==>|Aspect| A 
+    B ==>|Role| RO
+    B ==>|Relation| RE
+    B ==>|Occurrence| O 
+    PO:::external ==> E
+    A:::external ==> E
+    RO:::external ==> E
+    RE:::external ==> E
+    O:::external ==> E
     PTD -.-> E
 
     click PO "/docs/design/theory/quintessential-modelling/modelling-procedures/physical-object-definition-model" "This is a tooltip for a link"
